@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Reparacion Celular Amayuca | Reparacion de celulares</title>
+  <meta name="description" content="Centro de Reparacion Celular Amayuca: reparacion profesional de celulares, accesorios y venta de celulares seminuevos en Av. Morelos #23, Col. Gabriel Tepepa. Servicio rapido, seguro y con garantia.">
+  <meta name="keywords" content="reparacion de celulares Amayuca, Centro de Reparacion Celular Amayuca, accesorios para celular, celulares seminuevos Amayuca, cambio de pantalla, bateria celular">
+  <meta property="og:title" content="Centro de Reparacion Celular Amayuca">
+  <meta property="og:description" content="Reparacion profesional, accesorios y venta de equipos seminuevos en Amayuca. Servicio rapido, seguro y con garantia.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/local-amayuca.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="lock">
+
+  <!-- LOADER -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb brand-loader">
+      <i class="fa-solid fa-mobile-screen-button"></i>
+      <span class="loader-tool"><i class="fa-solid fa-wrench"></i></span>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+  <div id="load-flash" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Centro de Reparacion Celular Amayuca - inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <div class="nav-logo-copy">
+            <span>Centro de Reparacion</span>
+            <span>Celular Amayuca</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegacion principal">
+          <ul class="nav-links">
+            <li><a href="#why">Por que elegirnos</a></li>
+            <li><a href="#ambientes">Servicios</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://wa.me/527352097070?text=Hola%2C%20quiero%20informacion%20sobre%20reparacion%20de%20celulares%2C%20accesorios%20o%20equipos%20seminuevos."
+           target="_blank" rel="noopener noreferrer"
+           class="btn-gold nav-cta" style="font-size:13px; padding:12px 24px;">
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mob-menu" aria-label="Menu movil">
+      <a href="#why">Por que elegirnos</a>
+      <a href="#ambientes">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/527352097070?text=Hola%2C%20quiero%20informacion%20sobre%20reparacion%20de%20celulares%2C%20accesorios%20o%20equipos%20seminuevos." target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="hero-badge" id="hero-badge">
+            <div class="badge-dot"></div>
+            Reparacion profesional en Amayuca
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Tu celular</span></span>
+            <span class="line"><span>vuelve a</span></span>
+            <span class="line"><span class="accent">funcionar.</span></span>
+          </h1>
+
+          <p class="hero-sub" id="hero-sub">
+            Reparacion de celulares, accesorios y venta de equipos seminuevos en un solo lugar. Servicio <strong>rapido, seguro y con garantia</strong> en Av. Morelos #23, Col. Gabriel Tepepa.
+          </p>
+
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="https://wa.me/527352097070?text=Hola%2C%20quiero%20cotizar%20la%20reparacion%20de%20mi%20celular."
+               target="_blank" rel="noopener noreferrer" class="btn-gold">
+              Cotizar por WhatsApp
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-screwdriver-wrench" style="font-size:15px; color:var(--gray);"></i>
+              Ver servicios
+            </a>
+          </div>
+
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Servicio garantizado
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-bolt"></i>
+              Rapido y seguro
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-location-dot"></i>
+              Amayuca, Morelos
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- WHY -->
+    <section id="why" aria-labelledby="why-heading">
+      <canvas class="section-particles" data-particles aria-hidden="true"></canvas>
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por que elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              Cuando tu celular falla, necesitas una respuesta clara:
+              <em> expertos, rapidez y garantia.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Somos un punto de referencia en Amayuca para reparacion de celulares, accesorios y equipos seminuevos. La atencion se enfoca en resolver con seguridad, explicar con claridad y entregar confianza.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-user-gear"></i>
+            </div>
+            <h3>Revision profesional</h3>
+            <p>Tu equipo se revisa con criterio tecnico para identificar la falla y recomendar la solucion adecuada.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <h3>Servicio rapido</h3>
+            <p>Procesos pensados para atenderte sin vueltas, con comunicacion directa por WhatsApp y en tienda.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Trabajo con garantia</h3>
+            <p>El negocio comunica servicio garantizado para que repares tu celular con mayor tranquilidad.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <h3>Todo para tu celular</h3>
+            <p>Ademas de reparaciones, encuentras accesorios y celulares seminuevos en la misma ubicacion.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Servicios y productos</div>
+            <h2 class="section-title" id="amb-heading">
+              Soluciones reales para que tu celular<br>
+              <span class="gold">siga contigo todos los dias</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:460px; line-height:1.7;">
+              Reparacion, mantenimiento, accesorios y equipos seminuevos con atencion directa en el centro de Amayuca.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">Atencion en tienda y WhatsApp</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <div class="amb-card reveal">
+            <img class="amb-img" src="https://smartphonesperu.pe/wp-content/uploads/2019/03/servicio-tecnico-de-celulares-smartphonesperu-3.jpg" alt="Tecnico reparando una pantalla de celular con herramientas de precision">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" style="background:rgba(255,215,0,0.14); border-color:rgba(255,215,0,0.42);" aria-hidden="true">
+                <i class="fa-solid fa-screwdriver-wrench" style="color:var(--gold);"></i>
+              </div>
+              <h3>Reparacion de celulares</h3>
+              <p>Pantallas, baterias, logica, puertos y mas, con servicio profesional, rapido, seguro y con garantia.</p>
+              <div class="amb-temp">Servicio tecnico</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d1">
+            <img class="amb-img img-pos-right" src="https://cdn.dotpe.in/longtail/item_collection/9241486/3ebX7MCQ.webp" alt="Coleccion de accesorios para celular con cargadores cables audifonos fundas y power bank">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" style="background:rgba(46,107,255,0.15); border-color:rgba(96,165,250,0.4);" aria-hidden="true">
+                <i class="fa-solid fa-headphones-simple" style="color:#93c5fd;"></i>
+              </div>
+              <h3>Accesorios y mas</h3>
+              <p>Audifonos, cargadores, cables, micro SD y productos utiles para proteger y mejorar tu celular.</p>
+              <div class="amb-temp">Todo para tu celular</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d2">
+            <img class="amb-img img-pos-center" src="https://www.bgr.com/img/gallery/5-hidden-dangers-of-buying-a-used-smartphone/l-intro-1762413449.jpg" alt="Vitrina de celulares seminuevos exhibidos para venta">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3);" aria-hidden="true">
+                <i class="fa-solid fa-mobile-screen" style="color:white;"></i>
+              </div>
+              <h3>Celulares seminuevos</h3>
+              <p>Equipos disponibles para quienes buscan renovar su celular con una opcion practica y accesible.</p>
+              <div class="amb-temp">Venta de equipos</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Como funciona</div>
+          <h2 class="section-title" id="proceso-heading">
+            Tres pasos para resolverlo <span class="gold">sin complicarte</span>
+          </h2>
+          <p>Un proceso simple para reparar, comprar accesorios o preguntar por celulares seminuevos.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Escribenos o visitanos</h3>
+            <p>Cuentalo por WhatsApp o llega a Av. Morelos #23, Col. Gabriel Tepepa, en Amayuca.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Revisamos tu equipo</h3>
+            <p>Identificamos la falla o la necesidad: reparacion, mantenimiento, accesorio o equipo seminuevo.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Recibe una solucion</h3>
+            <p>Te damos una respuesta clara para que sigas usando tu celular con confianza.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTO / SERVICIO DESTACADO -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <canvas class="section-particles" data-particles aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="producto-wrap">
+
+          <div class="reveal">
+            <div class="label">Servicio destacado</div>
+            <h2 class="section-title" id="prod-heading">
+              Mantenimiento preventivo y correctivo<br>
+              <span class="gold">para tu celular</span>
+            </h2>
+            <p class="producto-lead">
+              Una revision a tiempo puede ayudarte a recuperar rendimiento, evitar fallas mayores y mantener tu equipo listo para el dia a dia.
+            </p>
+
+            <ul class="feature-rows" aria-label="Servicios de mantenimiento y reparacion">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <div>
+                  <h4>Pantallas</h4>
+                  <p>Atencion para equipos con pantalla danada, golpeada o con fallas visibles de uso.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-battery-three-quarters"></i></div>
+                <div>
+                  <h4>Baterias</h4>
+                  <p>Revision cuando el celular no retiene carga, se apaga o presenta bajo rendimiento.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-plug"></i></div>
+                <div>
+                  <h4>Puertos y carga</h4>
+                  <p>Soluciones para problemas al conectar cargadores, cables o accesorios.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-microchip"></i></div>
+                <div>
+                  <h4>Logica y mas</h4>
+                  <p>Diagnostico para fallas internas y otros problemas tecnicos del dispositivo.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Datos principales del negocio">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Rapido</span>
+                <span class="spec-name">Atencion</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Seguro</span>
+                <span class="spec-name">Proceso</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Garantia</span>
+                <span class="spec-name">Servicio</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Amayuca</span>
+                <span class="spec-name">Ubicacion</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal d2">
+            <div class="panel-scene repair-scene">
+              <img src="https://images.pexels.com/photos/13625784/pexels-photo-13625784.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Tecnico revisando un celular abierto durante mantenimiento preventivo y correctivo">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Preventivo y correctivo
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-shield-halved" style="color:var(--gold);"></i>
+                Servicio garantizado
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="promo-banner" aria-labelledby="banner-heading">
+      <div class="banner-bg" aria-hidden="true"></div>
+      <div class="banner-overlay" aria-hidden="true"></div>
+      <div class="container reveal">
+        <h2 id="banner-heading">Tu celular no tiene que esperar: cotiza directo por WhatsApp.</h2>
+        <p>Envia una foto, explica la falla o pregunta por accesorios y equipos seminuevos. Te respondemos desde el Centro de Reparacion Celular Amayuca.</p>
+        <a href="https://wa.me/527352097070?text=Hola%2C%20necesito%20ayuda%20con%20mi%20celular.%20Me%20gustaria%20cotizar%20una%20reparacion%20o%20preguntar%20por%20accesorios."
+           target="_blank" rel="noopener noreferrer" class="btn-gold">
+          Hablar con un tecnico
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" aria-label="Numeros clave">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="4" data-suffix="" aria-label="4 categorias principales">0</div>
+            <div class="stat-lbl">Categorias<br>principales</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="3" data-suffix="" aria-label="3 pasos de atencion">0</div>
+            <div class="stat-lbl">Pasos<br>de atencion</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="100" data-suffix="%" aria-label="100 por ciento enfocado en celulares">0</div>
+            <div class="stat-lbl">Enfoque<br>celular</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="1" data-suffix="" aria-label="1 ubicacion en Amayuca">0</div>
+            <div class="stat-lbl">Ubicacion<br>en Amayuca</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Lo que encuentras</div>
+          <h2 class="section-title" id="sec-heading">
+            Servicio tecnico y tienda <span class="gold">en el mismo lugar</span>
+          </h2>
+          <p>Opciones claras para reparar, proteger, cargar, escuchar musica o renovar tu equipo.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-mobile-screen-button sector-icon" aria-hidden="true"></i>
+            <h3>Pantallas</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-battery-three-quarters sector-icon" aria-hidden="true"></i>
+            <h3>Baterias</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-charging-station sector-icon" aria-hidden="true"></i>
+            <h3>Cargadores</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-headphones sector-icon" aria-hidden="true"></i>
+            <h3>Audifonos</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-sd-card sector-icon" aria-hidden="true"></i>
+            <h3>Micro SD</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <canvas class="section-particles" data-particles aria-hidden="true"></canvas>
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Cuéntanos que le pasa a <span class="gold">tu celular</span>
+          </h2>
+          <p>El formulario abre WhatsApp con tu mensaje listo. Sin correos, sin esperas innecesarias.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <div class="contact-info">
+            <h3>Centro de Reparacion Celular Amayuca</h3>
+            <p class="ci-sub">Reparacion profesional, accesorios y celulares seminuevos en el centro de Amayuca.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Ubicacion</h4>
+                  <p>Av. Morelos #23,<br>
+                     Col. Gabriel Tepepa,<br>
+                     Amayuca, Morelos.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Telefono</h4>
+                  <p>
+                    <a href="tel:+527352097070">735 209 7070</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Horario</h4>
+                  <p>Confirma disponibilidad por WhatsApp antes de visitarnos.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escribenos y dinos que necesitas revisar o comprar.</p>
+                  <a href="https://wa.me/527352097070?text=Hola%2C%20vengo%20de%20la%20pagina%20web%20y%20quiero%20informacion."
+                     target="_blank" rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="map-embed" aria-label="Mapa de ubicacion">
+              <iframe
+                title="Mapa Centro de Reparacion Celular Amayuca"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Av.%20Morelos%2023%2C%20Gabriel%20Tepepa%2C%20Amayuca%2C%20Morelos&output=embed">
+              </iframe>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <h3>Solicitar atencion</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Tu nombre" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">Que necesitas</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Reparacion de celular</option>
+                    <option>Mantenimiento preventivo o correctivo</option>
+                    <option>Cambio de pantalla</option>
+                    <option>Bateria o carga</option>
+                    <option>Accesorios para celular</option>
+                    <option>Celulares seminuevos</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Ej. Mi celular no carga, tiene pantalla rota o quiero preguntar por accesorios..."></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar a WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar, WhatsApp se abrira con el mensaje preparado para el 735 209 7070.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span>Centro de Reparacion Celular Amayuca</span>
+        </div>
+        <p class="footer-tagline">
+          Todo para tu celular: reparacion profesional, accesorios y venta de equipos seminuevos en Amayuca.
+        </p>
+        <nav class="footer-links" aria-label="Enlaces del pie de pagina">
+          <a href="#why">Por que elegirnos</a>
+          <a href="#ambientes">Servicios</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="https://wa.me/527352097070?text=Hola%2C%20quiero%20informacion%20del%20Centro%20de%20Reparacion%20Celular%20Amayuca."
+             target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.google.com/maps?q=Av.%20Morelos%2023%2C%20Gabriel%20Tepepa%2C%20Amayuca%2C%20Morelos"
+             target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="Ver ubicacion en Google Maps">
+            <i class="fa-solid fa-location-dot"></i>
+          </a>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Centro de Reparacion Celular Amayuca. Todos los derechos reservados. Amayuca, Morelos.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/527352097070?text=Hola%2C%20visite%20su%20sitio%20web%20y%20me%20gustaria%20mas%20informacion."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
